@@ -1,0 +1,132 @@
+.list-title{
+    font-size: 1.3vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    background-color: #f29a1c;
+    color: #4b992c;
+    top: 50.5%;
+    left: 3%;
+    z-index:1;
+}
+
+.img-form{
+    display: block;
+    border-radius: 30px;
+    border: 3px solid #4b992c;
+    top: 52%;
+    left: 1.5%;
+    width: 26%;
+    height: 35%;
+    position: fixed;
+    float: left;
+}
+
+.btn1{
+    display: block;
+    position: fixed;
+    top: 28%;
+    left: 15.1vw;
+    width: 8.5vw;
+    height: 5vh;
+    background-color: #4b992c;
+    border: 3px solid #4b992c;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.btn2{
+    display: block;
+    position: fixed;
+    top: 28%;
+    left: 5.1vw;
+    width: 8.5vw;
+    height: 5vh;
+    background-color: #f29a1c;
+    border: 3px solid #4b992c;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.btn1:hover{
+    display: block;
+    position: fixed;
+    top: 28%;
+    left: 15.1vw;
+    width: 8.5vw;
+    height: 5vh;
+    background-color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+    color: #4b992c;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.btn2:hover{
+    display: block;
+    position: fixed;
+    top: 28%;
+    left: 5.1vw;
+    width: 8.5vw;
+    height: 5vh;
+    background-color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+    color: #4b992c;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+th{
+    border: 2px solid #FFFFFF;
+    background-color: #4b992c;
+    display: block;
+    position: relative;
+    left: 1.4vw;
+    top: 3vh;
+    width: 22vw;
+    padding: 1vh;
+    color: #FFFFFF;
+    font-size: 1.3vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    z-index:2;
+}
+
+td{
+    border: 2px solid #4b992c;
+    position: relative;
+    left: 1.4vw;
+    top: 3vh;
+    width: 22vw;
+    padding: 1vh;
+    color: #4b992c;
+    font-size: 0.6vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    z-index:1;
+}
+
+td:hover{
+    border: 2px solid #4b992c;
+    color: #4b992c;
+    background-color: #FFFFFF;
+}
+
+.selected {
+    color: #FFFFFF;
+    background-color: #4b992c;
+}
+
+.invisible{
+    display:none;
+}
