@@ -3,7 +3,7 @@ import L from 'leaflet'
 import {useEffect} from "react";
 
 function getBounds(center) {
-    return L.latLng(center).toBounds(3000)
+    return L.latLng(center).toBounds(200000)
 }
 
 function GetSquare(props){
@@ -24,7 +24,7 @@ function GetSquare(props){
             });
 
             let bounds = getBounds(e.latlng);
-            rect = new L.Rectangle(bounds, {color: "#f64c72ff"});
+            rect = new L.Rectangle(bounds, {color: "#10f500ff"});
             rect.addTo(map);
             props.handleFunc(bounds);
         },
@@ -52,7 +52,7 @@ function GetSquare(props){
             const coords = [[bounds.bottom, bounds.left], [bounds.top, bounds.right]];
 
 
-            let rect = new L.Rectangle(coords, {color: "#f64c72ff"});
+            let rect = new L.Rectangle(coords, {color: "#10f500ff"});
             rect.addTo(map);
         }
     })

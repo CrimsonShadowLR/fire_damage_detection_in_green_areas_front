@@ -11,6 +11,16 @@ class AOI extends React.Component {
         return null;
     }
 
+    state = {
+        value : "1"
+    };
+
+    handleRadioButton(value){
+        this.setState({
+        value: value
+        });
+    };
+
     selectArea = () => {
 
         this.props.selectImage()
@@ -26,8 +36,10 @@ class AOI extends React.Component {
         return null;
     }
 
-    render() {
 
+
+    render() {
+        const {value}=this.state;
         return (
             <div class="aoi" id="aoi">
                 {/* <div className="aoi-title">
@@ -50,6 +62,26 @@ class AOI extends React.Component {
 
                     <button className="btn1" onClick={this.selectArea}>Seleccionar</button>
                     <button className="btn2" onClick={this.cleanAll}>Borrar Todo</button>
+                    <div className="radio-satelite">
+                        <label>
+                            <input
+                            type="radio"
+                            value="1"
+                            checked={value === "1"}
+                            onChange={() => this.handleRadioButton("1")}
+                            />
+                            LandSat8
+                        </label>
+                        <label>
+                            <input
+                            type="radio"
+                            value="2"
+                            checked={value === "2"}
+                            onChange={() => this.handleRadioButton("2")}
+                            />
+                            Sentinel2
+                        </label>
+                    </div>
                 </div>
             </div>
         )

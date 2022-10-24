@@ -25,7 +25,7 @@
 .btn1{
     display: block;
     position: fixed;
-    top: 28%;
+    top: 35%;
     left: 15.1vw;
     width: 8.5vw;
     height: 5vh;
@@ -41,7 +41,7 @@
 .btn2{
     display: block;
     position: fixed;
-    top: 28%;
+    top: 35%;
     left: 5.1vw;
     width: 8.5vw;
     height: 5vh;
@@ -57,7 +57,7 @@
 .btn1:hover{
     display: block;
     position: fixed;
-    top: 28%;
+    top: 35%;
     left: 15.1vw;
     width: 8.5vw;
     height: 5vh;
@@ -73,7 +73,7 @@
 .btn2:hover{
     display: block;
     position: fixed;
-    top: 28%;
+    top: 35%;
     left: 5.1vw;
     width: 8.5vw;
     height: 5vh;

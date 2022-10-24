@@ -4,11 +4,11 @@ import 'leaflet/dist/leaflet.css';
 import {MapContainer, TileLayer, LayersControl, ImageOverlay} from 'react-leaflet'
 import GetSquare from "./map_functions/square";
 
-const position = [-12.0565,  -77.1019]
+const position = [-13.0565,  -75.1019]
 
 function renderMasks(maskPaths, bounds) {
     return maskPaths.map((entry, index) => {
-        let desc = "Nivel socioeconómico " + entry.level
+        let desc = "Gravedad Quemaduras " + entry.level
 
         let opacity = 0.3
 
@@ -33,7 +33,7 @@ function renderMasks(maskPaths, bounds) {
 function Map(props) {
     return (
         <div class="content">
-            <MapContainer center={position} zoom={14} scrollWheelZoom={false} style={{height: "100vh", width: "100%"}}>
+            <MapContainer center={position} zoom={5} scrollWheelZoom={false} style={{height: "100vh", width: "100%"}}>
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

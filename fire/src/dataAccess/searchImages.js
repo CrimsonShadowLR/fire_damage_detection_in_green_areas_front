@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export function doSearchImages(top, bottom, left, right) {
-    let url = "http://localhost:8086/searchImages/";
+    let url = "http://localhost:9997/api/searchImages/";
 
 
     const body = {
