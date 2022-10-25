@@ -1,6 +1,7 @@
 import React from 'react'
 import './aoi.css'
 import "@fontsource/montserrat"
+import leyenda from "../../images/leyenda.png";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -69,6 +70,7 @@ class AOI extends React.Component {
                             value="1"
                             checked={value === "1"}
                             onChange={() => this.handleRadioButton("1")}
+                            name="satellite"
                             />
                             LandSat8
                         </label>
@@ -78,10 +80,12 @@ class AOI extends React.Component {
                             value="2"
                             checked={value === "2"}
                             onChange={() => this.handleRadioButton("2")}
+                            name="satellite"
                             />
                             Sentinel2
                         </label>
                     </div>
+                    <img src={leyenda} alt="Leyenda de valores" />
                 </div>
             </div>
         )

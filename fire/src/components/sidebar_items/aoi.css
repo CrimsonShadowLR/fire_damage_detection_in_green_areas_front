@@ -144,6 +144,14 @@
     color: #FFFFFF;
 }
 
+img{
+    position: fixed;
+    display: block;
+    width: 20vw;
+    left: 4%;
+    top: 46%;
+}
+
 .invisible{
     display:none;
 }

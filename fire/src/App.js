@@ -77,7 +77,8 @@ class App extends React.Component {
   }
 
   prediction = (path) => {
-      doPredict(path).then((res) => {
+    const satellite = document.querySelector('input[name="satellite"]:checked').value;
+      doPredict(path,satellite).then((res) => {
 
           let image_data = res.data.image
           let bbDict = image_data.bounding_box
@@ -89,7 +90,7 @@ class App extends React.Component {
   selectImage = () => {
 
       let path = this.state.images[this.state.selectedIdx].path
-      document.getElementById("aoi").classList.remove("blocked")
+      document.getElementById("aoi").classList.remove("blocked")    
 
       doCheckFiles(path).then((res) => {
 
@@ -114,8 +115,9 @@ class App extends React.Component {
       const bottom = document.getElementById("bottom").value
       const left = document.getElementById("left").value
       const right = document.getElementById("right").value
+      const satellite = document.querySelector('input[name="satellite"]:checked').value;
 
-      doSearchImages(top, bottom, left, right).then((res) => {
+      doSearchImages(top, bottom, left, right,satellite).then((res) => {
           this.setState({images: res.data.images})
       } )
 
